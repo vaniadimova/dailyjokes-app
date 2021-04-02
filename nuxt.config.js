@@ -1,5 +1,8 @@
+import pkg from './package'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  mode: 'universal',
+  target: 'static',
   head: {
     title: 'nuxtjoke',
     htmlAttrs: {
@@ -32,9 +35,13 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+   
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    extend(config, ctx) {
+
+    }
   }
 }
